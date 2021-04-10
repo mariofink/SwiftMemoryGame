@@ -2,7 +2,7 @@
 //  MemoryApp.swift
 //  Memory
 //
-//  Created by Mario Fink on 09.04.21.
+//  Created by Mario Fink on 08.04.21.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct MemoryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: EmojiMemoryGame())
         }
     }
 }
