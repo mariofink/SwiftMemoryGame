@@ -15,7 +15,7 @@ struct EmojiMemoryGameView: View {
         return HStack {
             ForEach(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
-                    viewModel.chooseCard(card: card)
+                    viewModel.chooseCard(card)
                 }
             }
         }

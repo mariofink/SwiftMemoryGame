@@ -10,8 +10,7 @@ import Foundation
 struct MemoryGame<CardContent> {
     var cards: Array<Card>
     
-    // TODO: could use _ as external argument so that you could simply call choose(card) instead of choose(card: card)
-    mutating func choose(card: Card) {
+    mutating func choose(_ card: Card) {
         print("Card chosen: \(card)")
         let chosenIndex: Int = index(of: card)
         cards[chosenIndex].isFaceUp = !cards[chosenIndex].isFaceUp
